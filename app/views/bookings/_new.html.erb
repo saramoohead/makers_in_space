@@ -1,9 +1,9 @@
 <%= form_for Booking.new do |form| %>
   <%= form.label :firstname %>
-  <%= form.text_field :firstname, id:"firstname" %>
+  <%= form.text_field :firstname, id:"firstname" %><br>
   <%= form.label :lastname %>
-  <%= form.text_field :lastname, id:"lastname" %>
+  <%= form.text_field :lastname, id:"lastname" %><br>
   <%= form.label :email %>
-  <%= form.text_field :email, id:"email" %>
-  <%= form.submit "Book now" %>
+  <%= form.text_field :email, id:"email" %><br>
+  <%= form.submit "Book now", id:"booking" %>
 <% end %>

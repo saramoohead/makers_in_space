@@ -1,7 +1,16 @@
-    <section class="content">
-      <h2>MAKERS IN SPACE</h2>
-      <p>Welcome to the ride of your life.</p>
-      <p><%= 8 - Booking.all.count %> seats available</p>
-      <%= render 'new' %>
-      <%= render 'success' %>
-    </section>
+<header class="full">
+  <h1>
+    <img src="images/logo.png" alt="Makers Galactica logo">
+  </h1>
+</header>
+
+<section class="content">
+  <h2>MAKERS IN SPACE</h2>
+  <p>Welcome to the ride of your life.</p>
+  <p><%= 8 - Booking.all.count %> seats available</p>
+  <%= render 'new' %>
+  <%= render 'success' %>
+</section>
+
+<section class="full" id="social">
+</section>

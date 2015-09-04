@@ -1,0 +1,126 @@
+body {
+	font-family: "Futura", Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 1.4;
+	/*as you make the font size bigger, you bring the multiplier of line-height down*/
+	background: #ffffff;
+	color: #000000;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 700px;
+	margin: 0 0 30px 0;
+}
+
+p {
+	margin: 30px 0 30px 0;
+}
+
+header, section {
+	/*by default it expands to 100% width*/
+	/*When you tell something to be 100%, unless its parents are set to 100%, it will only be 100% of content*/
+	background-position: center center; 
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	/*This last line is to tell everything that is absolute, like the form, to stay within its parent, or within its section in this case*/
+}
+
+html, body {
+	height: 100%;
+}
+/*You have to tell both html and body*/
+
+.full {
+/*You can leave off the type, and just apply to the class, don't have to say section.full and header.full. Just saying .full will cover both.*/
+	height: 100%;
+}
+
+.content {
+	width: 550px;
+	margin: 60px auto 60px auto;
+}
+
+header {
+	background-image: url(../images/earth1.png);
+}
+
+/*section#cyclists {
+	background-image: url(../images/space1.png);
+}*/
+
+section#confirmation {
+	background-image: url(../images/space1.png);
+}
+
+section#social {
+	background-image: url(../images/earth3.png);
+}
+
+h1 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 500px;
+	height: 500px;
+	margin: -150px 0 0 -250px;
+}
+
+div#mc_embed_signup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 130px;
+	background: #000000;
+	padding: 20px;
+	margin: -65px 0 0 -200px;
+	/*Remember, you have to realign from the top left corner, so in the rectangle, it's pulling up minus half height, pull back half width*/
+}
+
+input[type="email"] {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #ffffff;
+	background: #000000;
+	color: #ffffff;
+	padding: 0;
+	margin: 0 0 20px 0;
+	font-size: 20px;
+	outline: none;
+	transition: all .5s;
+}
+
+input[type="email"]:focus {
+	border-bottom-color: #185699;
+}
+
+input[type="submit"] {
+	background: #000000;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	margin: 5px 10px 5px 10px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+input[id="booking"] {
+	background: #000000;
+	color: #ffffff;
+	border: 4px solid #ffffff;
+	padding: 25px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: all .5s;
+  margin: 20px auto 20px auto;
+  display:block;
+
+}
+
+input[type="submit"]:hover {
+	border-color: #185699;
+}
+
+
