@@ -27,6 +27,19 @@ feature 'Bookings' do
       click_button("Book now")
       expect(page).to have_content('Sara you have booked your flight.')
     end
+
+    scenario 'book a flight' do
+      visit '/'
+      fill_in 'firstname', with: 'Sara'
+      fill_in 'lastname', with: 'OC'
+      fill_in 'email', with: 'sara@sara.com'
+      click_button("Book now")
+      fill_in 'firstname', with: 'Neil'
+      fill_in 'lastname', with: 'OC'
+      fill_in 'email', with: 'neil@neil.com'
+      click_button("Book now")
+      expect(page).to have_content('Neil you have booked your flight.')
+    end
   end
 
 end
