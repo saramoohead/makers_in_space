@@ -1,6 +1,10 @@
 ###Makers Craftathon
 
-One day of crafting code with employer clients. It's not a hackathon because the code must be test driven and beautiful.
+Solo follow up to craftathon challenge. 
+
+The team challenge didn't go as smoothly as we'd hoped on the day, so I wanted to tackle the basics of what we were trying to do on my own, as a follow up. 
+
+(It's not a hackathon because the code must be test driven and beautiful.)
 
 <img src="/public/images/screen_shot.png" alt="Screen shot of makers galactica logo on NASA photo of Earth">
 
