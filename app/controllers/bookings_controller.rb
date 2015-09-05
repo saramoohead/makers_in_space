@@ -2,7 +2,7 @@ class BookingsController < ApplicationController
 
   def index
     if Booking.all.any?
-      @most_recent = (Booking.all.sort_by {|k,v| v}.reverse).first.firstname
+      @most_recent = Booking.all.last.firstname
     end
   end
 
